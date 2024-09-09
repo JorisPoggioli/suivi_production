@@ -130,9 +130,10 @@ function App() {
               <td>{item.transport}</td>
               <td>{item.paiement}</td>
               <td>{item.statut}</td>
-              <td>{item.plans ? <a href="#" role="button">{item.plans}</a> : 'N/A'}</td>
-<td>{item.facture ? <a href="#" role="button">{item.facture}</a> : 'N/A'}</td>
-<td>{item.order ? <a href="#" role="button">{item.order}</a> : 'N/A'}</td>
+              <td>{item.plans ? <a href={item.plans} role="button">{item.plans}</a> : 'N/A'}</td>
+<td>{item.facture ? <a href={item.facture} role="button">{item.facture}</a> : 'N/A'}</td>
+<td>{item.order ? <a href={item.order} role="button">{item.order}</a> : 'N/A'}</td>
+
               <td>
                 <button onClick={() => deleteRow(index)} style={{ color: 'white', backgroundColor: 'red', border: 'none', padding: '5px 10px', cursor: 'pointer' }}>
                   Supprimer
